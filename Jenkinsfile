@@ -8,7 +8,7 @@ pipeline {
     }
     stage('hello') {
       steps {
-        sh 'python3 automate.py'
+        sh 'python3 automate_top.py'
       }
     }
   }

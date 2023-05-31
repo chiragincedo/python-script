@@ -45,8 +45,8 @@ for pr in pull_requests:
     source_branch = pr['source']['branch']['name']
     destination_branch = pr['destination']['branch']['name']
     print(f"Pull Request #{pr_id}: {pr_title}")
-    print(f"Source Branch: {source_branch}")
-    print(f"Destination Branch: {destination_branch}")
+    #print(f"Source Branch: {source_branch}")
+    #print(f"Destination Branch: {destination_branch}")
     diff_files = get_pull_request_diff_files(username, password, repository, pr_id)
     for file in diff_files:
       if file['new']!=None:

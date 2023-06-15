@@ -4,12 +4,12 @@ pipeline {
     stage('version') {
       steps {
         echo "This is jenkins file"
-        bat 'python --version'
+        sh 'python --version'
       }
     }
     stage('hello') {
       steps {
-        bat 'python automate_top.py'
+        sh 'python automate_top.py'
       }
     }
   }

@@ -3,6 +3,7 @@ pipeline {
   stages {
     stage('version') {
       steps {
+        echo "This is jenkins file"
         bat 'python --version'
       }
     }
